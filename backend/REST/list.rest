@@ -1,0 +1,31 @@
+### Get List
+GET http://localhost:5000/api/list
+
+### ADD LIST
+POST http://localhost:5000/api/list/add
+Content-Type: application/json
+
+{
+    "title": "ini judul ke 1",
+    "activity": "Kerja",
+    "complete": "true"
+}
+
+### EDIT LIST
+PATCH http://localhost:5000/api/list/edit
+Content-Type: application/json
+
+{
+    "title": "ini judul ke 9",
+    "activity": "Llama",
+    "complete": "false",
+    "postID" : "6"
+}
+
+### DELETE LIST
+DELETE http://localhost:5000/api/list/delete/
+Content-Type: application/json
+
+{
+    "postID" : "1"
+}
